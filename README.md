@@ -1,4 +1,4 @@
-# ml_ops_2
-Dummy project within ML Ops 2 homework with model inference for MTS Teta Competition
-
-Service requires file `train.csv` to be located at `./app/train_data/` to work correctly. File should be downloaded from ML competetion [MTS Teta ML 1](https://www.kaggle.com/competitions/teta-mts-ml-1/data).
+### Этот проект содержит сервис с ml-моделью предсказания оттока клиентов телекома.
+* Проект включает front и back части. Общение между front и back реализовано по API.
+* Front часть предлагает опцию загрузки файла(неразмеченного) для скоринга в формате .csv и опцию выгрузки файла с предсказаниями. Файл с предсказаниями содержит id объекта(в нашем случае клиента) и предсказание для него (1 или 0)
+* Полученный сервис упакован в Docker Image.
